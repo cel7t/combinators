@@ -38,7 +38,7 @@ Please ensure that their names are CAPITALIZED in the expression.
 
 Additionally, users can use ~(TO-CHURCH <integer>)~ to get the church numeral representation of a number.
 #+BEGIN_SRC
-./combinators.scm "ADD (SUCC ONE) (TO-CHURCH 1)" as number
+$ ./combinators.scm "ADD (SUCC ONE) (TO-CHURCH 1)" as number
 => 3
 #+END_SRC
 
