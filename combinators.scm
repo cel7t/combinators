@@ -1,4 +1,6 @@
 #!/usr/bin/scheme --script
+;; combinators.scm - A Small Combinator Calculus Evaluator
+;; © 2023 Sarthak Shah (cel7t)
 
 (define-syntax curry
   (syntax-rules (:lock)

@@ -50,3 +50,4 @@ I primarily used [[https://web.stanford.edu/class/cs242/materials/lectures/lectu
 
 * License
 This program is licensed under GPL v3 or later.
+© 2023 Sarthak Shah (cel7t)
