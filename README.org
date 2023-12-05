@@ -37,9 +37,13 @@ Please ensure that their names are CAPITALIZED in the expression.
 18. FAC
 
 Additionally, users can use ~(TO-CHURCH <integer>)~ to get the church numeral representation of a number.
+#+BEGIN_SRC
+./combinators.scm "ADD (SUCC ONE) (TO-CHURCH 1)" as number
+=> 3
+#+END_SRC
 
 * Known Issues
-The church numeral to number conversion fails for larger expressions due to type errors.
+The church numeral to number conversion fails for some expressions due to type errors.
 
 
 * License
