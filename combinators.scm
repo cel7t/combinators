@@ -13,13 +13,6 @@
     [(_ a . rest)
      (curry a :lock . rest)]))
 
-(define (parse str)
-  (eval
-    `(curry
-       ,@(read
-           (open-input-string
-             (string-append "(" str ")"))))))
-
 (define S
   (lambda (x) (lambda (y) (lambda (z) ((x z) (y z))))))
 
@@ -85,6 +78,11 @@
       (SUCC (loop (- i 1)))
       ZERO)))
 
+(define (inc1 num)
+  (if (number? num)
+    (1+ num)
+    1))
+
 (let [(to-parse (cadr (command-line)))]
   (cond
     [(string? to-parse)
@@ -99,7 +97,7 @@
                              (not (null? (cdddr (command-line))))
                              (equal? (cadddr (command-line))
                                      "number"))
-                      (string-append "(" to-parse " 1+ 0)")
+                      (string-append "(" to-parse " inc1 0)")
                       (string-append "(" to-parse ")")))))))
        (newline))]
     [else
