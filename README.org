@@ -1,5 +1,5 @@
-#+TITLE: Small Combinator Calculus Interpreter
-Combinators.scm is a very small combinator calculus evaluator written in Scheme.
+#+TITLE: combinators.scm - A Small Combinator Calculus Evaluator
+[[./combinators.scm][combinators.scm]] is a very small combinator calculus evaluator written in Scheme.
 To run it, you will need to have Chez Scheme installed on your machine.
 * Usage
 Running an expression
