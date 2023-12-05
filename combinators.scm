@@ -72,16 +72,11 @@
 (define FAC
   (curry C2 (C2 I FAC*) (PAIR ONE ONE)))
 
-(define (to-church n)
+(define (TO-CHURCH n)
   (let loop ((i n))
     (if (> i 0)
       (SUCC (loop (- i 1)))
       ZERO)))
-
-(define (inc1 num)
-  (if (number? num)
-    (1+ num)
-    1))
 
 (let [(to-parse (cadr (command-line)))]
   (cond
@@ -97,7 +92,7 @@
                              (not (null? (cdddr (command-line))))
                              (equal? (cadddr (command-line))
                                      "number"))
-                      (string-append "(" to-parse " inc1 0)")
+                      (string-append "(" to-parse " 1+ 0)")
                       (string-append "(" to-parse ")")))))))
        (newline))]
     [else

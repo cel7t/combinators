@@ -36,5 +36,11 @@ Please ensure that their names are CAPITALIZED in the expression.
 17. ONE
 18. FAC
 
+Additionally, users can use ~(TO-CHURCH <integer>)~ to get the church numeral representation of a number.
+
+* Known Issues
+The church numeral to number conversion fails for larger expressions due to type errors.
+
+
 * License
 This program is licensed under GPL v3 or later.
