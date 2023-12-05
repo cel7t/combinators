@@ -1,0 +1,40 @@
+#+TITLE: Small Combinator Calculus Interpreter
+Combinators.scm is a very small combinator calculus evaluator written in Scheme.
+To run it, you will need to have Chez Scheme installed on your machine.
+* Usage
+Running an expression
+#+BEGIN_SRC
+$ ./combinators.scm "S K K 1"
+=> 1
+#+END_SRC
+
+Running an expression and converting it to an integer
+#+BEGIN_SRC
+$ ./combinators.scm "SUCC ZERO" as number
+=> 1
+#+END_SRC
+
+** Supported Combinators
+Here is a list of supported combinators.
+Please ensure that their names are CAPITALIZED in the expression.
+1. S
+2. K
+3. I
+4. Y
+5. C1
+6. C2
+7. PAIR
+8. ZERO
+9. SUCC
+10. ADD
+11. ADD2
+12. MUL
+13. FIRST 
+14. SECOND
+15. M
+16. I2
+17. ONE
+18. FAC
+
+* License
+This program is licensed under GPL v3 or later.
