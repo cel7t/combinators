@@ -27,14 +27,13 @@ Please ensure that their names are CAPITALIZED in the expression.
 8. ZERO
 9. SUCC
 10. ADD
-11. ADD2
-12. MUL
-13. FIRST 
-14. SECOND
-15. M
-16. I2
-17. ONE
-18. FAC
+11. MUL
+12. FIRST 
+13. SECOND
+14. M
+15. I2
+16. ONE
+17. FAC
 
 Additionally, users can use ~(TO-CHURCH <integer>)~ to get the church numeral representation of a number.
 #+BEGIN_SRC
