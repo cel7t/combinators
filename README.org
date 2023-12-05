@@ -45,6 +45,8 @@ $ ./combinators.scm "ADD (SUCC ONE) (TO-CHURCH 1)" as number
 * Known Issues
 The church numeral to number conversion fails for some expressions due to type errors.
 
+* Acknowledgements
+I primarily used [[https://web.stanford.edu/class/cs242/materials/lectures/lecture02.pdf][this lecture's slides]] for the definitions of the advanced combinators.
 
 * License
 This program is licensed under GPL v3 or later.
